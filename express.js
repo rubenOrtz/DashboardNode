@@ -7,7 +7,7 @@ const path = require("path")
 
 
 
-
+/*AAA*/
 app.use(express.static(path.join(__dirname, './react/dashboard/build')));
 
 app.get('/*', function(req, res) {

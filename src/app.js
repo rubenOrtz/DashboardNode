@@ -11,10 +11,7 @@ const session = require("express-session");
 const Store = require("connect-mongo")(session);
 const cors = require("cors");
 const { graphqlHTTP } = require("express-graphql");
-const CryptoJS = require("crypto-js")
 const RootSchema = require("./graphql/index");
-console.log(CryptoJS.AES.decrypt("U2FsdGVkX18yNqi+iwPJvONTZL09Q2m/k1Jf7zC+8c8AcX96HTAfTJUm5RGOWmXS", "test").toString(CryptoJS.enc.Utf8));
-
 
 mongoose.connect(" mongodb+srv://dbUser:bK0W7jepeeUl7fch@cluster0.yzv4p.mongodb.net/test?authSource=admin&replicaSet=atlas-jwxuxo-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true", {
     useNewUrlParser: true,
